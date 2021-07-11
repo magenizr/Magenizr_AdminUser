@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr AdminUser
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminUser
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::system">
+                    <resource id="Magento_User::acl" title="Permissions" translate="title" sortOrder="100">
+                        <resource id="Magenizr_AdminUser::activity" title="User Activity"  sortOrder="100" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

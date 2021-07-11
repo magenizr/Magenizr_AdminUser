@@ -1,0 +1,19 @@
+<!--
+/**
+ * Magenizr AdminUser
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminUser
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<div id="magenizr-adminuser">
+    <ul class="agenda">
+        <li><span></span><?php echo __('No issues found.') ?></li>
+        <li><span class="warning"></span><?php echo __('No login since a while.') ?></li>
+        <li><span class="danger"></span><?php echo __('Multiple failed login attempts.') ?></li>
+    </ul>
+    <p><?php echo __('Go to <a href="%1">Stores > Configuration > Advanced > Admin</a> for module settings.', $this->getUrl('adminhtml/system_config/edit/section/admin')); ?></p>
+</div>

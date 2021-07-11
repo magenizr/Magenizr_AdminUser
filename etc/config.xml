@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr AdminUser
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminUser
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <admin>
+            <magenizr_adminuser>
+                <highlight_users_after_days>30</highlight_users_after_days>
+            </magenizr_adminuser>
+        </admin>
+    </default>
+</config>

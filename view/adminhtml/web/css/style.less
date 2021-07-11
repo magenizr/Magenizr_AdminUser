@@ -1,0 +1,63 @@
+/**
+ * Magenizr AdminUser
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminUser
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+
+@background-color-warning: #fcf8e3;
+@background-color-danger: #f2dede;
+@border-color: #f5f5f5;
+
+.admin__data-grid-wrap {
+    overflow-x: inherit;
+}
+
+#magenizr-adminuser {
+
+    .agenda {
+
+        list-style-type: none;
+
+        li {
+            line-height: 25px;
+        }
+
+        span {
+            display: inline-block;
+            float: left;
+            width: 50px;
+            height: 20px;
+            margin: 2px 10px 0 0;
+            border: 1px solid @border-color;
+        }
+
+        .warning {
+            background-color: @background-color-warning;
+        }
+
+        .danger {
+            background-color: @background-color-danger;
+        }
+    }
+}
+
+.admin__data-grid-wrap-static .data-grid {
+
+    tr td.max-reached,
+    tr:nth-child(even) td.max-reached {
+        background-color: @background-color-danger;
+    }
+
+    tr td.warning,
+    tr:nth-child(even) td.warning {
+        background-color: @background-color-warning;
+    }
+
+    tr td.danger,
+    tr:nth-child(even) td.danger {
+        background-color: @background-color-danger;
+    }
+}

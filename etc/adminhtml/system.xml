@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr AdminUser
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminUser
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="admin" translate="label" sortOrder="1000" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>advanced</tab>
+            <group id="magenizr_adminuser" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Admin User Activity</label>
+                <field id="highlight_users_after_days" translate="label" sortOrder="10" showInDefault="1" canRestore="1">
+                    <label>Highlight Users after X days</label>
+                    <validate>validate-greater-than-zero validate-digits</validate>
+                    <comment><![CDATA[Enter the number of days after a admin user should be highlighted in <strong>System > Permissions > User Activity</strong>. Default: 30]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

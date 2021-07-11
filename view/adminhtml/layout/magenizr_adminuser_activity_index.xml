@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr AdminUser
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminUser
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Magenizr_AdminUser::css/style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="magenizr_adminuser_activity_index"/>
+            <block class="Magento\Framework\View\Element\Template" name="magenizr.adminuser.adminhtml.info" template="Magenizr_AdminUser::info.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

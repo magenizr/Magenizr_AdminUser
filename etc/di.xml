@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr AdminUser
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminUser
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- DataProvider -->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="magenizr_adminuser_activity_index_data_source" xsi:type="string">Magenizr\AdminUser\Model\ResourceModel\Activity\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- AdminUser Collection -->
+    <virtualType name="Magenizr\AdminUser\Model\ResourceModel\Activity\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">admin_user</argument>
+            <argument name="resourceModel" xsi:type="string">Magenizr\AdminUser\Model\ResourceModel\Activity</argument>
+        </arguments>
+    </virtualType>
+
+</config>
