@@ -3,7 +3,6 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @package   Magenizr_AdminUser
  * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
  * @license   https://www.magenizr.com/license Magenizr EULA
  */
@@ -11,9 +10,9 @@
 namespace Magenizr\AdminUser\Model\ResourceModel\Activity;
 
 /**
- * Class Collection
+ * Collection
  *
- * @package Magenizr\Notification\Model\ResourceModel\Activity
+ * Init Resource Model
  */
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {

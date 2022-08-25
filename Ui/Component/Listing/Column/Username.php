@@ -3,7 +3,6 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @package   Magenizr_AdminUser
  * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
  * @license   https://www.magenizr.com/license Magenizr EULA
  */
@@ -16,9 +15,9 @@ use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Ui\Component\Listing\Columns\Column;
 
 /**
- * Class Username
+ * Username
  *
- * @package Magenizr\AdminUser\Ui\Component\Listing\Column
+ * Manipulate column
  */
 class Username extends Column
 {
@@ -35,12 +34,11 @@ class Username extends Column
     /**
      * DateDifference constructor.
      *
-     * @param ContextInterface                     $context
-     * @param UiComponentFactory                   $uiComponentFactory
-     * @param UrlInterface                         $urlBuilder
-     * @param \Magenizr\Notification\Model\Section $section
-     * @param array                                $components
-     * @param array                                $data
+     * @param ContextInterface $context
+     * @param UiComponentFactory $uiComponentFactory
+     * @param UrlInterface $urlBuilder
+     * @param array $components
+     * @param array $data
      */
     public function __construct(
         ContextInterface $context,
@@ -54,7 +52,9 @@ class Username extends Column
     }
 
     /**
-     * @param  array $dataSource
+     * Prepare data source
+     *
+     * @param array $dataSource
      * @return array
      */
     public function prepareDataSource(array $dataSource)

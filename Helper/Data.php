@@ -3,7 +3,6 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @package   Magenizr_AdminUser
  * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
  * @license   https://www.magenizr.com/license Magenizr EULA
  */
@@ -13,13 +12,13 @@ namespace Magenizr\AdminUser\Helper;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
 /**
- * Class Data
+ * Data
  *
- * @package Magenizr\AdminUser\Helper
+ * Module helper
  */
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
-    const TABLE_USER = 'admin_user';
+    public const TABLE_USER = 'admin_user';
 
     /**
      * @var string
@@ -39,9 +38,9 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * Get difference between two dates. Return the number of days.
      *
-     * @param  string $dateFrom
-     * @param  $dateTo
-     * @return float
+     * @param string $dateTo
+     * @param string $dateFrom
+     * @return mixed
      */
     public function getDateDiff($dateTo, $dateFrom = 'now')
     {
@@ -55,7 +54,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * Get module configuration values from core_config_data
      *
-     * @param  $setting
+     * @param string $setting
      * @return mixed
      */
     public function getConfig($setting)

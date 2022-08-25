@@ -3,7 +3,6 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @package   Magenizr_AdminUser
  * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
  * @license   https://www.magenizr.com/license Magenizr EULA
  */
@@ -11,13 +10,15 @@
 namespace Magenizr\AdminUser\Ui\Component\Listing\Column;
 
 /**
- * Class Status
+ * Status
  *
- * @package Magenizr\Notification\Ui\Component\Listing\Column
+ * Manipulate column
  */
 class Status implements \Magento\Framework\Option\ArrayInterface
 {
     /**
+     * Return option array
+     *
      * @return array
      */
     public function toOptionArray()

@@ -3,7 +3,6 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @package   Magenizr_AdminUser
  * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
  * @license   https://www.magenizr.com/license Magenizr EULA
  */
@@ -13,9 +12,9 @@ namespace Magenizr\AdminUser\Controller\Adminhtml\Activity;
 use Magento\Framework\Controller\ResultFactory;
 
 /**
- * Class MassEnable
+ * MassEnable
  *
- * @package Magenizr\AdminUser\Controller\Adminhtml\Activity
+ * Retrieve selected items for mass enable action.
  */
 class MassEnable extends \Magenizr\AdminUser\Controller\Adminhtml\Activity
 {
@@ -42,6 +41,11 @@ class MassEnable extends \Magenizr\AdminUser\Controller\Adminhtml\Activity
         parent::__construct($context);
     }
 
+    /**
+     * Execute MassEnable
+     *
+     * @return void
+     */
     public function execute()
     {
         try {

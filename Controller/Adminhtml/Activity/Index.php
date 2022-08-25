@@ -3,7 +3,6 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @package   Magenizr_AdminUser
  * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
  * @license   https://www.magenizr.com/license Magenizr EULA
  */
@@ -11,9 +10,9 @@
 namespace Magenizr\AdminUser\Controller\Adminhtml\Activity;
 
 /**
- * Class Index
+ * Index
  *
- * @package Magenizr\AdminUser\Controller\Adminhtml\Activity
+ * Set pagetitle for admin grid.
  */
 class Index extends \Magenizr\AdminUser\Controller\Adminhtml\Activity
 {
@@ -37,6 +36,11 @@ class Index extends \Magenizr\AdminUser\Controller\Adminhtml\Activity
         $this->resultPageFactory = $resultPageFactory;
     }
 
+    /**
+     * Execute Index
+     *
+     * @return \Magento\Framework\View\Result\Page
+     */
     public function execute()
     {
         $resultPage = $this->resultPageFactory->create();

@@ -3,7 +3,6 @@
  * Magenizr AdminUser
  *
  * @category    Magenizr
- * @package     Magenizr_AdminUser
  * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
@@ -12,15 +11,15 @@
 <div class="admin__data-grid-wrap admin__data-grid-wrap-static" data-role="grid-wrapper">
     <table class="data-grid" data-role="grid">
         <thead>
-            <tr each="data: getVisible(), as: '$col'" render="getHeader()"/>
+            <tr each="data: getVisible(), as: '$col'" render="getHeader()"></tr>
         </thead>
         <tbody>
         <tr data-role="row" repeat="foreach: rows, item: '$row'">
             <td outerfasteach="data: getVisible(), as: '$col'"
-                css="$parent.getRowClass($row())" click="getFieldHandler($row())" template="getBody()"/>
+                css="$parent.getRowClass($row())" click="getFieldHandler($row())" template="getBody()"></td>
         </tr>
         <tr ifnot="hasData()" class="data-grid-tr-no-data">
-            <td attr="colspan: countVisible()" translate="'No records available.'"/>
+            <td attr="colspan: countVisible()" translate="'No records available.'"></td>
         </tr>
         </tbody>
     </table>
