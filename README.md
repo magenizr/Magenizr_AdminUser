@@ -1,6 +1,6 @@
 This module will help you to identify rarely used admin accounts and allow you to disable or delete them directly.
 
-![Magenizr AdminUser - Backend](https://images2.imgbox.com/da/8f/wcLj1jC4_o.gif)
+![Magenizr AdminUser - Backend](https://images2.imgbox.com/66/a2/i8yhurQo_o.png)
 
 ## Business Value
 The more admin user accounts are enabled in Magento®, the higher is the risk of getting compromised. 
@@ -44,7 +44,7 @@ php bin/magento setup:upgrade
 ## Installation (Composer 2)
 
 1. Update your composer.json `composer require "magenizr/magento2-adminuser":"1.0.1" --no-update`
-2. Use `composer update --no-install` to update your composer.lock file.
+2. Use `composer update magenizr/magento2-adminuser --no-install` to update your composer.lock file.
 
 ```
 Updating dependencies
