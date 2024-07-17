@@ -1,7 +1,7 @@
 [![Magenizr Plus](https://images2.imgbox.com/11/6b/yVOOloaA_o.gif)](https://account.magenizr.com)
 ---
 
-[![Latest Stable Version](http://poser.pugx.org/magenizr/magento2-adminuser/v)](https://packagist.org/packages/magenizr/magento2-adminuser) [![Total Downloads](http://poser.pugx.org/magenizr/magento2-adminuser/downloads)](https://packagist.org/packages/magenizr/magento2-adminuser) [![Latest Unstable Version](http://poser.pugx.org/magenizr/magento2-adminuser/v/unstable)](https://packagist.org/packages/magenizr/magento2-adminuser) [![License](http://poser.pugx.org/magenizr/magento2-adminuser/license)](https://packagist.org/packages/magenizr/magento2-adminuser) [![PHP Version Require](http://poser.pugx.org/magenizr/magento2-adminuser/require/php)](https://packagist.org/packages/magenizr/magento2-adminuser)
+[![Latest Stable Version](https://poser.pugx.org/magenizr/magento2-adminuser/v)](https://packagist.org/packages/magenizr/magento2-adminuser) [![Total Downloads](https://poser.pugx.org/magenizr/magento2-adminuser/downloads)](https://packagist.org/packages/magenizr/magento2-adminuser) [![Latest Unstable Version](https://poser.pugx.org/magenizr/magento2-adminuser/v/unstable)](https://packagist.org/packages/magenizr/magento2-adminuser) [![License](http://poser.pugx.org/magenizr/magento2-adminuser/license)](https://packagist.org/packages/magenizr/magento2-adminuser) [![PHP Version Require](https://poser.pugx.org/magenizr/magento2-adminuser/require/php)](https://packagist.org/packages/magenizr/magento2-adminuser)
 
 # Admin User
 This module will help you to identify rarely used admin accounts and allow you to disable or delete them directly.
