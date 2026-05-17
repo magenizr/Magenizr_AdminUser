@@ -1,5 +1,3 @@
----
-
 [![Latest Stable Version](https://poser.pugx.org/magenizr/magento2-adminuser/v)](https://packagist.org/packages/magenizr/magento2-adminuser) [![Total Downloads](https://poser.pugx.org/magenizr/magento2-adminuser/downloads)](https://packagist.org/packages/magenizr/magento2-adminuser) [![Latest Unstable Version](https://poser.pugx.org/magenizr/magento2-adminuser/v/unstable)](https://packagist.org/packages/magenizr/magento2-adminuser) [![License](https://poser.pugx.org/magenizr/magento2-adminuser/license)](https://packagist.org/packages/magenizr/magento2-adminuser) [![PHP Version Require](https://poser.pugx.org/magenizr/magento2-adminuser/require/php)](https://packagist.org/packages/magenizr/magento2-adminuser)
 
 # Admin User
