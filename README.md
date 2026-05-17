@@ -65,9 +65,6 @@ php bin/magento module:enable Magenizr_AdminUser --clear-static-content
 ## Support
 If you have any issues with this extension, open an issue on [GitHub](https://github.com/magenizr/Magenizr_AdminUser/issues).
 
-## Contact
-Follow us on [GitHub](https://github.com/magenizr), [Twitter](https://twitter.com/magenizr) and [Facebook](https://www.facebook.com/magenizr).
-
 ## History
 ===== 1.0.1 =====
 * 2.4.x compatibility tested
@@ -83,3 +80,13 @@ Follow us on [GitHub](https://github.com/magenizr), [Twitter](https://twitter.co
 
 ## License
 [OSL - Open Software Licence 3.0](https://opensource.org/licenses/osl-3.0.php)
+
+---
+
+## About [Magenizr](https://www.magenizr.com.au/)
+
+Built and maintained by [Magenizr](https://www.magenizr.com.au/) — an Australian [Adobe Commerce & Magento development agency](https://www.magenizr.com.au/services/adobe-commerce/) based in Bendigo, Victoria. We build custom Magento modules, handle platform migrations, and provide ongoing support for businesses across [Melbourne](https://www.magenizr.com.au/web-development-melbourne/), Sydney, Brisbane and the DACH region.
+
+- [Our Services](https://www.magenizr.com.au/services/adobe-commerce/) — Custom modules, migrations, support
+- [Book a Free Consultation](https://www.magenizr.com.au/book/) — 30-minute call, no obligation
+- [All Open-Source Modules](https://github.com/magenizr) — Our full collection on GitHub
