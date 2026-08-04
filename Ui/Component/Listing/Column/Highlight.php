@@ -3,13 +3,12 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
- * @license   https://www.magenizr.com/license Magenizr EULA
+ * @copyright Copyright (c) 2021 Magenizr (https://magenizr.com.au)
+ * @license   https://magenizr.com.au/license Magenizr EULA
  */
 
 namespace Magenizr\AdminUser\Ui\Component\Listing\Column;
 
-use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
 use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Ui\Component\Listing\Columns\Column;
@@ -22,21 +21,15 @@ use Magento\Ui\Component\Listing\Columns\Column;
 class Highlight extends Column
 {
     /**
-     * @var UrlInterface
-     */
-    private $urlBuilder;
-
-    /**
      * @var \Magenizr\AdminUser\Helper\Data
      */
     private $helper;
 
     /**
-     * DateDifference constructor.
+     * Highlight constructor.
      *
      * @param ContextInterface $context
      * @param UiComponentFactory $uiComponentFactory
-     * @param UrlInterface $urlBuilder
      * @param \Magenizr\AdminUser\Helper\Data $helper
      * @param array $components
      * @param array $data
@@ -44,12 +37,10 @@ class Highlight extends Column
     public function __construct(
         ContextInterface $context,
         UiComponentFactory $uiComponentFactory,
-        UrlInterface $urlBuilder,
         \Magenizr\AdminUser\Helper\Data $helper,
         array $components = [],
         array $data = []
     ) {
-        $this->urlBuilder = $urlBuilder;
         $this->helper = $helper;
         parent::__construct($context, $uiComponentFactory, $components, $data);
     }

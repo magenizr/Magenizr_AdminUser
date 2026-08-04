@@ -3,8 +3,8 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
- * @license   https://www.magenizr.com/license Magenizr EULA
+ * @copyright Copyright (c) 2021 Magenizr (https://magenizr.com.au)
+ * @license   https://magenizr.com.au/license Magenizr EULA
  */
 
 namespace Magenizr\AdminUser\Model\ResourceModel;
@@ -12,7 +12,9 @@ namespace Magenizr\AdminUser\Model\ResourceModel;
 use Magenizr\AdminUser\Helper\Data as Helper;
 
 /**
- * Style
+ * Activity
+ *
+ * Init Resource Model
  */
 class Activity extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
@@ -25,9 +27,9 @@ class Activity extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
     /**
      * Update the user status
      *
-     * @param int $userIds
-     * @param string $status
-     * @return mixed
+     * @param int[]|int $userIds
+     * @param int $status
+     * @return int
      */
     public function updateUserStatus($userIds, $status)
     {

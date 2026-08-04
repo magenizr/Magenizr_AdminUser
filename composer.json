@@ -2,15 +2,18 @@
   "name": "magenizr/magento2-adminuser",
   "description": "Identify rarely used admin accounts. It shows you the date and time of the last login as well as failed login attempts.",
   "type": "magento2-module",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": [
     "OSL-3.0"
   ],
+  "require": {
+    "php": "~7.4.0||~8.0.0||~8.1.0||~8.2.0||~8.3.0"
+  },
   "authors": [
     {
       "name": "Magenizr",
       "email": "modules@magenizr.com",
-      "homepage": "https://agency.magenizr.com"
+      "homepage": "https://magenizr.com.au"
     }
   ],
   "repositories": [

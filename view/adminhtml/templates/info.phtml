@@ -3,8 +3,8 @@
  * Magenizr AdminUser
  *
  * @category    Magenizr
- * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
- * @license     https://www.magenizr.com/license Magenizr EULA
+ * @copyright   Copyright (c) 2021 Magenizr (https://magenizr.com.au)
+ * @license     https://magenizr.com.au/license Magenizr EULA
  */
 -->
 
@@ -14,5 +14,5 @@
         <li><span class="warning"></span><?= $escaper->escapeHtml(__('No login since a while.')) ?></li>
         <li><span class="danger"></span><?= $escaper->escapeHtml(__('Multiple failed login attempts.')) ?></li>
     </ul>
-    <p><?= __('Go to <a href="%1">Stores > Configuration > Advanced > Admin</a> for module settings.', $block->getUrl('adminhtml/system_config/edit/section/admin')); ?></p>
+    <p><?= /* @noEscape */ __('Go to <a href="%1">Stores > Configuration > Advanced > Admin</a> for module settings.', $block->escapeUrl($block->getUrl('adminhtml/system_config/edit/section/admin'))); ?></p>
 </div>

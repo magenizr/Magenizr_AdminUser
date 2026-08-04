@@ -3,13 +3,14 @@
  * Magenizr AdminUser
  *
  * @category  Magenizr
- * @copyright Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
- * @license   https://www.magenizr.com/license Magenizr EULA
+ * @copyright Copyright (c) 2021 Magenizr (https://magenizr.com.au)
+ * @license   https://magenizr.com.au/license Magenizr EULA
  */
 
 namespace Magenizr\AdminUser\Helper;
 
-use Magento\Framework\App\Config\ScopeConfigInterface;
+use Magento\Framework\App\Helper\Context;
+use Magento\Framework\Stdlib\DateTime\DateTimeFactory;
 
 /**
  * Data
@@ -26,9 +27,29 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     protected $tab = 'admin/magenizr_adminuser';
 
     /**
+     * @var DateTimeFactory
+     */
+    protected $dateFactory;
+
+    /**
+     * Data constructor.
+     *
+     * @param Context $context
+     * @param DateTimeFactory $dateFactory
+     */
+    public function __construct(
+        Context $context,
+        DateTimeFactory $dateFactory
+    ) {
+        parent::__construct($context);
+
+        $this->dateFactory = $dateFactory;
+    }
+
+    /**
      * Get current date based on date settings.
      *
-     * @return false|int
+     * @return string
      */
     public function getNow()
     {
@@ -40,7 +61,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      *
      * @param string $dateTo
      * @param string $dateFrom
-     * @return mixed
+     * @return float
      */
     public function getDateDiff($dateTo, $dateFrom = 'now')
     {
